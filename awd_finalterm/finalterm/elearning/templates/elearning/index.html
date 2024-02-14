@@ -1,0 +1,78 @@
+{% include "./header.html" %}
+{% include "./nav.html" %}
+{% load static %}
+
+<body>
+<div class="container-fluid">
+        <img id="head" src="{% static '/images/homepage-image.jpg' %}" alt="homepage-elearning" width="100%" height="350px">
+      
+        <br><br>
+        <div class="col-sm-8" class="course-content">
+            <h2>Course Categories</h2>
+            {% block content %}
+                <div class="row-category">
+                {% for data in data%}
+                <div class="category">{{data.course_type}}</div>
+                {% endfor %}
+                </div>
+            {% endblock %}
+        </div>
+</div>
+
+<div class="container-fluid">
+        <div class="col-sm-12" class="chooseus-content">
+            
+            <h2>Why Choose Us?</h2>
+            <div class="content">
+            <p>Whatever your background, stage of life and learning need, we are committed 
+to nurturing the lifelong achiever in you. Our carefully tailored programmes 
+and services empower you to define your own peak of uccess and how you want 
+to scale that peak.
+
+Our close partnership with industry leaders, as well as our academic programmes, 
+skills-based courses and diverse networks equip individuals and enterprises 
+for a fast-changing world.</p>
+            
+            
+            <img id="whychooseus" src="{% static '/images/whychooseus-image.jpg' %}" alt="homepage-elearning" width="50%" height="350px">
+            </div>
+        </div>
+        </div>
+
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8" id="footer">
+            <img id="logo" src="{% static '/images/elearning_logo.png' %}" alt="elearning logo" width="200px" height="150px">
+
+            <div id="footer-content">
+                <h5>Academic Info</h5>
+                <ul style="list-style-type: none; margin: 0; padding: 0;">
+                    <li>
+                        <a class="nav-link"  href="#" style="font-size: 15px;">About Us</a>
+                    </li>
+                    <li>
+                        <a class="nav-link"  href="#" style="font-size: 15px;">Our Courses</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5 >Contact Us</h5>
+                <p>512/F, Central Road, Main Town Jackson Heights. New York</p>
+                <br>
+                <span>info@admissionexample.com</span><br>
+                <span>www.admissionexample.com</span>
+                <p>+12345 678 910/+12345 678 910</p>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+    <div class="copyright-content">
+        Copyright &copy; 2024 Advanced Web Developement Final Assignment
+    </div>
+</div>
+    </body>
+</html>

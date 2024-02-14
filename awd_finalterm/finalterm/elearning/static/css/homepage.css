@@ -1,0 +1,90 @@
+.nav-link {
+    font-size: 20px;
+}
+
+.content, .about-content, .contactus-content{
+   display: flex;
+   flex: 2
+}
+
+.content p {
+    width: 50%;
+    font-size: 20px;
+    white-space: pre;
+    
+}
+
+.content img {
+    margin: 9px;
+    display: block;
+    margin-left: 120px;
+    
+}
+
+#footer {
+    width: 100%;
+    float: left;
+   display: flex;
+   background-color: darkgrey;
+}
+
+
+#logo {
+    margin: 9px;
+    display: block;
+    margin-right: 38%;
+}
+
+#footer-content{
+    margin-right: 40px;
+
+}
+
+.copyright-content{
+    text-align: center;
+}
+
+
+.title {
+    padding: 5%;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.about-content p{
+    width: 50%;
+    font-size: 20px;
+    white-space: pre;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.contactus-content p{
+    width: 50%;
+    font-size: 20px;
+    white-space: pre;
+    
+}
+
+.row-category {
+   
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.category {
+    display: block;
+    margin: 20px;
+    left: -30px;
+    font-size: 28px;
+    text-align: center;
+    border: 1px solid red;
+    
+    width: 20%;
+    border-top: 100%;
+    text-align: center;
+    background-color: lightgray;
+   
+}
+

@@ -1,0 +1,33 @@
+{% if user.is_authenticated %}
+
+{% include "./header-afterlogin.html" %}
+{% include "./nav-afterlogin.html" %}
+{% load static %}
+
+<body>
+  <div class="container-fluid" style="background-color: lightgray;">
+    <div class="col-sm-12" class="chooseus-content">
+        
+        <h2>{{user.first_name}}</h2>
+        <h4>Status: {{user.status}}</h4>
+        
+    </div>
+  </div>
+
+  <nav class="navbar-expand-md flex-column">
+  <div class="container-fluid">
+    <ul class="navbar-nav mr-auto" id="navigation">
+        <li class="nav-item active"><a class="nav_link" href="/">Your Courses&nbsp;</a></li>
+        <li class="nav-item active"><a class="nav_link" href="https://www.ebi.ac.uk">Academic</a></li>
+        
+    </ul>
+</div>
+  </nav>
+
+<li class="nav-item active">
+    <a class="nav-link" href="../logout/"> : Logout<span class="sr-only">(current)</span></a>
+  </li>
+
+
+  
+{% endif %}
